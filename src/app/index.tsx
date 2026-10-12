@@ -24,7 +24,7 @@ type Pokemon = {
 export default function HomeScreen() {
   const [pokemon, setPokemon] = useState<Pokemon[]>([]);
   const [search, setSearch] = useState('');
-  const [offset, setOffset] = useState(0);
+  const [offset, setOffset] = useState(177);
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
   const [error, setError] = useState('');
@@ -70,7 +70,7 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.title}>Pokédex</Text>
+        <Text style={styles.title}> Sonam's Pokédex</Text>
         <Text style={styles.subtitle}>
           Discover your favourite Pokémon!
         </Text>
@@ -168,16 +168,16 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f4f6f8',
+    backgroundColor: 'black',
   },
   header: {
-    backgroundColor: '#e63946',
+    backgroundColor: '#008577',
     padding: 20,
     borderBottomLeftRadius: 22,
     borderBottomRightRadius: 22,
   },
   title: {
-    color: '#fff',
+    color: 'white',
     fontSize: 32,
     fontWeight: 'bold',
   },
